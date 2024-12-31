@@ -1,0 +1,51 @@
+proxies:
+#===Isi akun di bawah text hijau ini===#
+- name: malmal_vmess_ws_tls
+  server: 104.17.3.81
+  type: vmess
+  port: 443
+  uuid: 771f0683-147d-4b14-b4d0-cd8eaa56b2c4
+  alterId: 0
+  cipher: auto
+  tls: true
+  skip-cert-verify: true
+  servername: globalssh.malmal.my.id
+  network: ws
+  ws-opts:
+    path: /vmess-ws
+    headers:
+      Host: globalssh.malmal.my.id
+  udp: true
+- name: vmess_IPTUNNEL
+  server: edu.ruangguru.com
+  type: vmess
+  port: 443
+  uuid: 38b59620-b151-4a13-a9aa-dca11fb70a75
+  alterId: 0
+  cipher: auto
+  tls: true
+  skip-cert-verify: true
+  servername: point.malmal.my.id
+  network: ws
+  ws-opts:
+    path: /buy-vmess-ws-pm-telegram-at-synricha
+    headers:
+      Host: point.malmal.my.id
+  udp: true
+
+- name: vmess_IPTUNNEL_ORISGP
+  server: edu.ruangguru.com
+  type: vmess
+  port: 443
+  uuid: 38b59620-b151-4a13-a9aa-dca11fb70a75
+  alterId: 0
+  cipher: auto
+  tls: true
+  skip-cert-verify: true
+  servername: point.sing-box.id
+  network: ws
+  ws-opts:
+    path: /buy-vmess-ws-pm-telegram-at-synricha
+    headers:
+      Host: point.sing-box.id
+  udp: true
